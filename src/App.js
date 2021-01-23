@@ -1,5 +1,6 @@
 import React from 'react';
-import Counter from './Counter';
+import InputSample from './InputSample';
+//import Counter from './Counter';
 //import Hello from './hello';
 //import Wrapper from './Wrapper';
 
@@ -10,7 +11,8 @@ function App() {
   //    <Hello name = "react" color = "red" isSpecial={true} />
   //    <Hello color = "pink" />
   //  </Wrapper>
-  <Counter />
+  // <Counter />
+   <InputSample />
   );
 }
 
