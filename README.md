@@ -17,3 +17,5 @@ function App() {
 # props(properties) 컴포넌트를 사용하게 될 때 특정 값을 전달 시 사용. --Wrapper.js 참조
 
 # 조건부 렌더링 : 특정 조건이 참(true)인지 거짓(false)인지에 따라 다른 결과를 보여준다. --Counter.js 참조
+
+# 리액트에서 객체를 업데이트 하려면, 기존 것을 복사를 한다. ...(spread 문법)을 사용한다
