@@ -1,5 +1,6 @@
 import React from 'react';
-import InputSample from './InputSample';
+import UserList from './UserList';
+//import InputSample from './InputSample';
 //import Counter from './Counter';
 //import Hello from './hello';
 //import Wrapper from './Wrapper';
@@ -12,7 +13,8 @@ function App() {
   //    <Hello color = "pink" />
   //  </Wrapper>
   // <Counter />
-   <InputSample />
+   //<InputSample />
+   <UserList />
   );
 }
 
