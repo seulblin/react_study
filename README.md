@@ -24,3 +24,8 @@ function App() {
 useRef로 관리 된 것은 바뀌어도 리랜더링 되지 않는다.
 1. setTimeout, setInterval의 ID
 2. 외부 라이브러리를 사용하여 생성된 인스턴트 Scroll 위치 등 다양하게~
+
+# 배열에 새로운 항목을 추가하는 법
+1. 스프레드 연산자를 통해 복사 + 원하는 함수
+2. concat함수 사용하기
+*** push, splice 등 사용 금지!
