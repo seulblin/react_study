@@ -2,17 +2,26 @@ import React from 'react';
 
 
 //삭제 버튼이 눌릴 때,  onRemove가 동작하기!
-function User({ user, onRemove }) {
-  const { username, email, id} = user;
+function User({ user, onRemove, onToggle }) {
+  const { username, email, id, active} = user;
   return(
     <div>
-        <b>{username}</b> <span>({email})</span>
+        <b style={{
+          color: active ? 'green' : 'black',
+          cursor: 'pointer'
+        }}
+        onClick={() => onToggle(id)}
+        >
+        {username}
+        </b> 
+        &nbsp;
+        <span>({email})</span>
         <button onClick={() => onRemove(id)}>삭제</button>
     </div>
   );
 } 
 
-function UserList({ users, onRemove }){
+function UserList({ users, onRemove, onToggle }){
     return(
     <div>
       {
@@ -22,6 +31,7 @@ function UserList({ users, onRemove }){
               user={user} 
               key={user.id} 
               onRemove={onRemove}
+              onToggle={onToggle}
             />
           )
         )
